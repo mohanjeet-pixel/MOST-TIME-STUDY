@@ -1,0 +1,44 @@
+# ---- Secrets: never commit (real Gemini API key lives in .env) ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ---- Study data: customer videos, results, AI cache, Excel exports (1+ GB, confidential) ----
+data/
+*.mp4
+*.MP4
+*.mts
+*.MTS
+*.m2ts
+*.mov
+*.avi
+*.xlsx
+~$*.xlsx
+
+# ---- Python ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log

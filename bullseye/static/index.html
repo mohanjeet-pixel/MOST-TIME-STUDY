@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulls Eye · MOST Time Study</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <a href="#/" class="brand">
+      <span class="logo-chip"><img src="logo.png" alt="Bull"></span>
+      <span class="product"><b>Bulls Eye</b><small>MOST Video Time Study</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#/" data-nav="dash"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"/></svg>Dashboard</a>
+      <a href="#/new" data-nav="new"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg>New study</a>
+    </nav>
+    <div class="side-sec">
+      <div class="side-title">Studies</div>
+      <input id="filter" class="side-search" placeholder="Search studies…">
+      <ul id="slist" class="slist"></ul>
+    </div>
+    <div class="side-foot" id="cfg"></div>
+  </aside>
+  <main id="view" class="view"></main>
+</div>
+<div id="toasts" class="toasts"></div>
+<script src="app.js"></script>
+</body>
+</html>
